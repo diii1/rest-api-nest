@@ -9,3 +9,19 @@ export class AuthDto {
   @IsNotEmpty()
   password: string;
 }
+
+export class UserDto {
+  @IsString()
+  firstName: string;
+
+  @IsString()
+  lastName: string;
+
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
